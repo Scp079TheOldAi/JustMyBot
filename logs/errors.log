@@ -1,0 +1,109 @@
+2025-11-23 21:51:27,615 | ERROR | MODELLOADS | Failed to load module echo_module: cannot import name 'Filters' from 'telegram.ext' (C:\Users\MrWaffle\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\__init__.py)
+Traceback (most recent call last):
+  File "C:\Users\MrWaffle\Desktop\Новая папка (2)\modelloads\ModelLoads.py", line 34, in _load_module
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MrWaffle\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\MrWaffle\Desktop\Новая папка (2)\modules\echo_module.py", line 2, in <module>
+    from telegram.ext import CommandHandler, MessageHandler, Filters
+ImportError: cannot import name 'Filters' from 'telegram.ext' (C:\Users\MrWaffle\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\__init__.py)
+2025-11-23 21:56:24,282 | ERROR | SAFE_EXECUTOR | Exception in handler lualist: [WinError 3] Системе не удается найти указанный путь: 'items/luaScripts'
+Traceback (most recent call last):
+  File "C:\Users\MrWaffle\Desktop\Новая папка (2)\core\safe_executor.py", line 10, in safe_call
+    return func(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MrWaffle\Desktop\Новая папка (2)\modules\LuaList.py", line 10, in lualist
+    files = [f for f in os.listdir(BASE_DIR) if f.endswith(".lua")]
+                        ^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] Системе не удается найти указанный путь: 'items/luaScripts'
+2025-11-23 21:56:24,292 | ERROR | bot_error_handler | ⚠ Ошибка!
+Пользователь: 946750339 (Scp-079 The Old Ai)
+Тип: TypeError
+Описание: object NoneType can't be used in 'await' expression
+
+2025-11-23 21:56:24,431 | ERROR | bot_error_handler | Full traceback:
+Traceback (most recent call last):
+  File "C:\Users\MrWaffle\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\_application.py", line 1315, in process_update
+    await coroutine
+  File "C:\Users\MrWaffle\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 159, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object NoneType can't be used in 'await' expression
+
+2025-11-23 21:56:49,408 | ERROR | bot_error_handler | ⚠ Ошибка!
+Пользователь: 946750339 (Scp-079 The Old Ai)
+Тип: TypeError
+Описание: object NoneType can't be used in 'await' expression
+
+2025-11-23 21:56:49,410 | ERROR | bot_error_handler | Full traceback:
+Traceback (most recent call last):
+  File "C:\Users\MrWaffle\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\_application.py", line 1315, in process_update
+    await coroutine
+  File "C:\Users\MrWaffle\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 159, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object NoneType can't be used in 'await' expression
+
+2025-11-23 22:00:34,639 | ERROR | SAFE_EXECUTOR | Ошибка в safe_call: 'CallbackQuery' object has no attribute 'edit_message_document'
+Traceback (most recent call last):
+  File "C:\Users\MrWaffle\Desktop\Новая папка (2)\core\safe_executor.py", line 9, in safe_call
+    return await func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MrWaffle\Desktop\Новая папка (2)\modules\CfgList.py", line 36, in cfg_send
+    await query.edit_message_document(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'CallbackQuery' object has no attribute 'edit_message_document'. Did you mean: 'edit_message_text'?
+2025-11-23 22:01:25,138 | ERROR | SAFE_EXECUTOR | Ошибка в safe_call: 'CallbackQuery' object has no attribute 'edit_message_document'
+Traceback (most recent call last):
+  File "C:\Users\MrWaffle\Desktop\Новая папка (2)\core\safe_executor.py", line 9, in safe_call
+    return await func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MrWaffle\Desktop\Новая папка (2)\modules\LuaList.py", line 36, in lua_send
+    await query.edit_message_document(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'CallbackQuery' object has no attribute 'edit_message_document'. Did you mean: 'edit_message_text'?
+2025-11-23 22:08:38,342 | ERROR | SAFE_EXECUTOR | Ошибка в safe_call: File must be non-empty
+Traceback (most recent call last):
+  File "C:\Users\MrWaffle\Desktop\Новая папка (2)\core\safe_executor.py", line 9, in safe_call
+    return await func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MrWaffle\Desktop\Новая папка (2)\modules\LuaList.py", line 36, in lua_send
+    await query.message.reply_document(
+  File "C:\Users\MrWaffle\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\_message.py", line 2646, in reply_document
+    return await self.get_bot().send_document(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MrWaffle\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\_extbot.py", line 2817, in send_document
+    return await super().send_document(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MrWaffle\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\_bot.py", line 1877, in send_document
+    return await self._send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MrWaffle\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\_extbot.py", line 634, in _send_message
+    result = await super()._send_message(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MrWaffle\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\_bot.py", line 819, in _send_message
+    result = await self._post(
+             ^^^^^^^^^^^^^^^^^
+  File "C:\Users\MrWaffle\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MrWaffle\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\_extbot.py", line 372, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MrWaffle\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MrWaffle\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\request\_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MrWaffle\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\request\_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.BadRequest: File must be non-empty
